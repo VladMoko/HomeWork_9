@@ -1,4 +1,4 @@
-package HomeWork9;
+package HomeWork9.TaskOne;
 
 public class TestClass {
     public static void main(String[] args) {
