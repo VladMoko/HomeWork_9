@@ -13,9 +13,9 @@ public class WordsCounter {
         String name = "words.txt";
         String content = reader(name);
         //Делаю одну строку
-        content = content.replaceAll("\n", " ");
+        content = content.replaceAll("\r", " ");
         //Убераю все двойные пробелы
-        content = content.replaceAll("\\s", " ");
+        content = content.replaceAll("\\s+", " ");
         //Проверка на пробелы в начале и конце
         content = content.trim();
 
