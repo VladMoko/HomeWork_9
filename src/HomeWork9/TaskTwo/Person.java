@@ -2,6 +2,7 @@ package HomeWork9.TaskTwo;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -21,6 +22,7 @@ public class Person {
         //Удаление лишнего
         list.remove(0);
 
+
         //Второй лист
         List<User> users = new ArrayList<>();
         //Цикл в котором всё мероприятие под каждого человека ... Alice ...
@@ -29,12 +31,13 @@ public class Person {
             String name = array[0];
             int age = Integer.parseInt(array[1]);
             users.add(new User(name, age));
-
-            //Перевод в json формат
-            Gson gson = new GsonBuilder().setPrettyPrinting().create();
-            String json = gson.toJson(users);
-            System.out.println(json);
         }
+        //Перевод в json формат
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        String json = gson.toJson(users);
+
+        System.out.println(json);
+
     }
 }
 
